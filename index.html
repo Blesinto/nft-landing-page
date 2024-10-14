@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Marketplace</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/Animation.css" />
+    <link rel="stylesheet" href="./assets/styles/screen.css" />
+    <!-- font-awesome  -->
+    <script
+      src="https://kit.fontawesome.com/7ae2f53444.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- boxicons  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="menu pdh-main">
+      <div class="logo_box">
+        <div>
+          <img src="./assets/images/logo_icon.png" alt="NFT Marketplace Logo" />
+        </div>
+        <div>
+          <h4>NFT Marketplace</h4>
+        </div>
+      </div>
+      <div>
+        <nav class="nav_link">
+          <ul>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Ranking</a></li>
+            <li><a href="#">connect a wallet</a></li>
+          </ul>
+          <button class="sign_btn"><i class="bx bx-user"></i>Sign Up</button>
+        </nav>
+      </div>
+
+      <!-- menu icon  -->
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </header>
+    <main>
+      <!-- hero section  -->
+      <section class="hero pd-main">
+        <div class="hero_text">
+          <h2 class="hero_title">Discover digital art & Collect NFTs</h2>
+          <p class="hero_para">
+            NFT marketplace UI created with Anima for Figma. Collect, buy and
+            sell art from more than 20k NFT artists.
+          </p>
+          <button class="sign_btn">
+            <img
+              src="./assets/images/rocket_icon.png"
+              alt="rockect"
+              class="rocket"
+            />Get Started
+          </button>
+          <!-- hero  count  -->
+          <div class="hero_count_box">
+            <div>
+              <h2>240k+</h2>
+              <span>Total Sale</span>
+            </div>
+            <!-- count 2  -->
+            <div>
+              <h2>240k+</h2>
+              <span>Total Sale</span>
+            </div>
+            <!-- count 2  -->
+            <div>
+              <h2>240k+</h2>
+              <span>Total Sale</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- hero_image  -->
+        <div class="hero_img_container">
+          <div class="hero_img_box">
+            <img src="./assets/images/hero_img.png" alt="" />
+          </div>
+          <div class="hero_ava">
+            <div>
+              <h3>Space Walking</h3>
+              <div class="d-flex gp-1 pt-1">
+                <img src="./assets/images/hero_avater.png" alt="Ava" />
+                <p>Animakid</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero section end  -->
+
+      <!-- collection section  -->
+      <section class="pd-main">
+        <!-- trend title  -->
+        <div class="trend-box">
+          <h1>Trending Collection</h1>
+          <p>Checkout our weekly updated trending collection.</p>
+        </div>
+
+        <!-- trend card  -->
+
+        <div class="d-flex-1 trend_card">
+          <!-- trend_card one -->
+          <div>
+            <div><img src="./assets/images/trend_img1.png" alt="" /></div>
+            <div class="d-flex gp-1 pt-1 trend_img">
+              <img src="./assets/images/trend_img--1.png" alt="" srcset="" />
+              <img src="./assets/images/trend_img--2.png" alt="" srcset="" />
+              <div class="trend_img-n">
+                <button class="op-0">1025+</button>
+              </div>
+            </div>
+            <!-- avater  -->
+            <div class="card_ava pt-1">
+              <div>
+                <h3>DSGN Animals</h3>
+                <div class="d-flex gp-1 pt-1">
+                  <img src="./assets/images/hero_avater.png" alt="Ava" />
+                  <p>MrFox</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- trend_card one end  -->
+          <!-- trend card two -->
+          <div>
+            <div><img src="./assets/images/trend_img2.png" alt="" /></div>
+            <div class="d-flex gp-1 pt-1 trend_img">
+              <img src="./assets/images/trend_img2--1.png" alt="" srcset="" />
+              <img src="./assets/images/trend_img2--2.png" alt="" srcset="" />
+              <div class="trend_img-n">
+                <button class="op-0">1025+</button>
+              </div>
+            </div>
+            <!-- avater  -->
+            <div class="card_ava pt-1">
+              <div>
+                <h3>Magic Mushrooms</h3>
+                <div class="d-flex gp-1 pt-1">
+                  <img src="./assets/images/hero_avater.png" alt="Ava" />
+                  <p>Shroomie</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- trend card three end  -->
+          <!-- trend card three -->
+          <div>
+            <div><img src="./assets/images/trend_img3.png" alt="" /></div>
+            <div class="d-flex gp-1 pt-1 trend_img">
+              <img src="./assets/images/trend_img3--1.png" alt="" srcset="" />
+              <img src="./assets/images/trend_img3--2.png" alt="" srcset="" />
+              <div class="trend_img-n">
+                <button class="op-0">1025+</button>
+              </div>
+            </div>
+            <!-- avater  -->
+            <div class="card_ava pt-1">
+              <div>
+                <h3>Disco Machines</h3>
+                <div class="d-flex gp-1 pt-1">
+                  <img src="./assets/images/hero_avater.png" alt="Ava" />
+                  <p>BeKind2Robots</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- trend card three end  -->
+        </div>
+      </section>
+      <!-- collection section end  -->
+
+      <!-- ============= Top Creators ================ -->
+      <section class="pd-main">
+        <div class="d-flex-1">
+          <div>
+            <h1>Top creators</h1>
+            <p>Checkout Top Rated Creators on the NFT Marketplace</p>
+          </div>
+          <div>
+            <button class="sign_btn_2">
+              <img
+                src="./assets/images/rocket_icon.png"
+                alt="rockect"
+                class="rocket"
+              />View Rankings
+            </button>
+          </div>
+        </div>
+
+        <!-- top creatots  -->
+        <div class="d-flex-1 top">
+          <!-- top 1 -->
+          <div class="top_box">
+            <div class="top_num_box">
+              <div class="top_num">1</div>
+              <div><img src="./assets/images/top_1.png" alt="top" /></div>
+            </div>
+            <div class="top_text_box">
+              <h3 class="top_text">Keepitreal</h3>
+              <div>
+                <span class="sales">Total Sales: </span>
+                <span class="price">34.53 ETH</span>
+              </div>
+            </div>
+          </div>
+          <!-- top 1 end  -->
+          <!-- top -2  -->
+          <div class="top_box">
+            <div class="top_num_box">
+              <div class="top_num">2</div>
+              <div><img src="./assets/images/top_2.png" alt="top" /></div>
+            </div>
+            <div class="top_text_box">
+              <h3 class="top_text">DigiLab</h3>
+              <div>
+                <span class="sales">Total Sales: </span>
+                <span class="price">34.53 ETH</span>
+              </div>
+            </div>
+          </div>
+          <!-- top 2 end  -->
+          <!-- top 3  -->
+          <div class="top_box">
+            <div class="top_num_box">
+              <div class="top_num">3</div>
+              <div><img src="./assets/images/top_3.png" alt="top" /></div>
+            </div>
+            <div class="top_text_box">
+              <h3 class="top_text">GravityOne</h3>
+              <div>
+                <span class="sales">Total Sales: </span>
+                <span class="price">34.53 ETH</span>
+              </div>
+            </div>
+          </div>
+          <!-- top 3 end  -->
+          <!-- top 4 -->
+          <div class="top_box">
+            <div class="top_num_box">
+              <div class="top_num">4</div>
+              <div><img src="./assets/images/top_4.png" alt="top" /></div>
+            </div>
+            <div class="top_text_box">
+              <h3 class="top_text">Juanie</h3>
+              <div>
+                <span class="sales">Total Sales: </span>
+                <span class="price">34.53 ETH</span>
+              </div>
+            </div>
+          </div>
+          <!-- top 4 end  -->
+        </div>
+
+        <!-- ======================== top creators row 2 ============================ -->
+        <div class="d-flex-1 top">
+          <!-- top 1 -->
+          <div class="top_box">
+            <div class="top_num_box">
+              <div class="top_num">5</div>
+              <div><img src="./assets/images/top_5.png" alt="top" /></div>
+            </div>
+            <div class="top_text_box">
+              <h3 class="top_text">BlueWhale</h3>
+              <div>
+                <span class="sales">Total Sales: </span>
+                <span class="price">34.53 ETH</span>
+              </div>
+            </div>
+          </div>
+          <!-- top 1 end  -->
+          <!-- top -2  -->
+          <div class="top_box">
+            <div class="top_num_box">
+              <div class="top_num">6</div>
+              <div><img src="./assets/images/top_6.png" alt="top" /></div>
+            </div>
+            <div class="top_text_box">
+              <h3 class="top_text">mr fox</h3>
+              <div>
+                <span class="sales">Total Sales: </span>
+                <span class="price">34.53 ETH</span>
+              </div>
+            </div>
+          </div>
+          <!-- top 2 end  -->
+          <!-- top 3  -->
+          <div class="top_box">
+            <div class="top_num_box">
+              <div class="top_num">7</div>
+              <div><img src="./assets/images/top_7.png" alt="top" /></div>
+            </div>
+            <div class="top_text_box">
+              <h3 class="top_text">Shroomie</h3>
+              <div>
+                <span class="sales">Total Sales: </span>
+                <span class="price">34.53 ETH</span>
+              </div>
+            </div>
+          </div>
+          <!-- top 3 end  -->
+          <!-- top 4 -->
+          <div class="top_box">
+            <div class="top_num_box">
+              <div class="top_num">8</div>
+              <div><img src="./assets/images/top_8.png" alt="top" /></div>
+            </div>
+            <div class="top_text_box">
+              <h3 class="top_text">robotica</h3>
+              <div>
+                <span class="sales">Total Sales: </span>
+                <span class="price">34.53 ETH</span>
+              </div>
+            </div>
+          </div>
+          <!-- top 4 end  -->
+        </div>
+
+        <!-- ======================== top creators row 2 end ============================ -->
+
+        <!-- ======================== top creators row 3 ============================ -->
+        <div class="d-flex-1 top">
+          <!-- top 1 -->
+          <div class="top_box">
+            <div class="top_num_box">
+              <div class="top_num">9</div>
+              <div><img src="./assets/images/top_9.png" alt="top" /></div>
+            </div>
+            <div class="top_text_box">
+              <h3 class="top_text">RustyRobot</h3>
+              <div>
+                <span class="sales">Total Sales: </span>
+                <span class="price">34.53 ETH</span>
+              </div>
+            </div>
+          </div>
+          <!-- top 1 end  -->
+          <!-- top -2  -->
+          <div class="top_box">
+            <div class="top_num_box">
+              <div class="top_num">10</div>
+              <div><img src="./assets/images/top_2.png" alt="top" /></div>
+            </div>
+            <div class="top_text_box">
+              <h3 class="top_text">animakid</h3>
+              <div>
+                <span class="sales">Total Sales: </span>
+                <span class="price">34.53 ETH</span>
+              </div>
+            </div>
+          </div>
+          <!-- top 2 end  -->
+          <!-- top 3  -->
+          <div class="top_box">
+            <div class="top_num_box">
+              <div class="top_num">11</div>
+              <div><img src="./assets/images/top_3.png" alt="top" /></div>
+            </div>
+            <div class="top_text_box">
+              <h3 class="top_text">Dotgu</h3>
+              <div>
+                <span class="sales">Total Sales: </span>
+                <span class="price">34.53 ETH</span>
+              </div>
+            </div>
+          </div>
+          <!-- top 3 end  -->
+          <!-- top 4 -->
+          <div class="top_box">
+            <div class="top_num_box">
+              <div class="top_num">12</div>
+              <div><img src="./assets/images/top_12.png" alt="top" /></div>
+            </div>
+            <div class="top_text_box">
+              <h3 class="top_text">Ghiblier</h3>
+              <div>
+                <span class="sales">Total Sales: </span>
+                <span class="price">34.53 ETH</span>
+              </div>
+            </div>
+          </div>
+          <!-- top 4 end  -->
+        </div>
+
+        <!-- ======================== top creators row 3 end ============================ -->
+      </section>
+      <!-- ================= Top Creators End =============== -->
+
+      <!-- ================ categories start =========================== -->
+      <section class="pd-main">
+        <div class="trend-box">
+          <h1>Browse Categories</h1>
+        </div>
+        <div class="cat_container">
+          <!-- cat 1 -->
+          <div class="cat_box">
+            <div class="cat_img_box">
+              <img src="./assets/images/cat_1.png" alt="" srcset="" />
+            </div>
+            <div class="cat_text">
+              <h4>Art</h4>
+            </div>
+          </div>
+          <!-- cat 2  -->
+          <div class="cat_box">
+            <div class="cat_img_box">
+              <img src="./assets/images/cat_2.png" alt="" srcset="" />
+            </div>
+            <div class="cat_text">
+              <h4>Collectibles</h4>
+            </div>
+          </div>
+          <!-- cat 3  -->
+          <div class="cat_box">
+            <div class="cat_img_box">
+              <img src="./assets/images/cat_3.png" alt="" srcset="" />
+            </div>
+            <div class="cat_text">
+              <h4>Music</h4>
+            </div>
+          </div>
+          <!-- cat 4  -->
+          <div class="cat_box">
+            <div class="cat_img_box">
+              <img src="./assets/images/cat_4.png" alt="" srcset="" />
+            </div>
+            <div class="cat_text">
+              <h4>Photography</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- container two  -->
+        <div class="cat_container mt-30">
+          <!-- cat 1 -->
+          <div class="cat_box">
+            <div class="cat_img_box">
+              <img src="./assets/images/cat_5.png" alt="" srcset="" />
+            </div>
+            <div class="cat_text">
+              <h4>Video</h4>
+            </div>
+          </div>
+          <!-- cat 2  -->
+          <div class="cat_box">
+            <div class="cat_img_box">
+              <img src="./assets/images/cat_6.png" alt="" srcset="" />
+            </div>
+            <div class="cat_text">
+              <h4>Utility</h4>
+            </div>
+          </div>
+          <!-- cat 3  -->
+          <div class="cat_box">
+            <div class="cat_img_box">
+              <img src="./assets/images/cat_7.png" alt="" srcset="" />
+            </div>
+            <div class="cat_text">
+              <h4>Sport</h4>
+            </div>
+          </div>
+          <!-- cat 4  -->
+          <div class="cat_box">
+            <div class="cat_img_box">
+              <img src="./assets/images/cat_8.png" alt="" srcset="" />
+            </div>
+            <div class="cat_text">
+              <h4>Virtual Worlds</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============================ categories end ============================ -->
+
+      <!-- ============discover =========================== -->
+      <section class="pd-main">
+        <div class="d-flex-1 dis">
+          <div>
+            <h1>Discover More NFTs</h1>
+            <p>Explore new trending NFTs</p>
+          </div>
+          <div class="dis_btn">
+            <button class="sign_btn_2">
+              <i class="fa-regular fa-eye"></i>See All
+            </button>
+          </div>
+        </div>
+        <!-- NFTS  -->
+        <div class="d-flex-2 nft_box">
+          <!-- nft one  -->
+          <div class="dis_nft_box">
+            <div class="dis_img_box">
+              <img src="./assets/images/nft_1.png" alt="" srcset="" />
+            </div>
+            <div class="nft_text">
+              <h4>Virtual Worlds</h4>
+              <div class="d-flex gp-1">
+                <img src="./assets/images/hero_avater.png" alt="Ava" />
+                <p>Animakid</p>
+              </div>
+              <!-- price  -->
+              <div class="d-flex-1 gp-2 pt-1">
+                <div class="nft_price">
+                  <h4>Prices</h4>
+                  <span>1.63 ETH</span>
+                </div>
+                <div class="nft_price">
+                  <h4>Highest Bid</h4>
+                  <span>0.33 wETH</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- nft two  -->
+          <div class="dis_nft_box">
+            <div class="dis_img_box">
+              <img src="./assets/images/nft_2.png" alt="" srcset="" />
+            </div>
+            <div class="nft_text">
+              <h4>Virtual Worlds</h4>
+              <div class="d-flex gp-1">
+                <img src="./assets/images/hero_avater.png" alt="Ava" />
+                <p>Animakid</p>
+              </div>
+              <!-- price  -->
+              <div class="d-flex-1 gp-2 pt-1">
+                <div class="nft_price">
+                  <h4>Prices</h4>
+                  <span>1.63 ETH</span>
+                </div>
+                <div class="nft_price">
+                  <h4>Highest Bid</h4>
+                  <span>0.33 wETH</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Nft three -->
+          <div class="dis_nft_box">
+            <div class="dis_img_box">
+              <img src="./assets/images/nft_3.png" alt="" srcset="" />
+            </div>
+            <div class="nft_text">
+              <h4>Virtual Worlds</h4>
+              <div class="d-flex gp-1">
+                <img src="./assets/images/hero_avater.png" alt="Ava" />
+                <p>Animakid</p>
+              </div>
+              <!-- price  -->
+              <div class="d-flex-1 gp-2 pt-1">
+                <div class="nft_price">
+                  <h4>Prices</h4>
+                  <span>1.63 ETH</span>
+                </div>
+                <div class="nft_price">
+                  <h4>Highest Bid</h4>
+                  <span>0.33 wETH</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- mush -->
+      <section class="mush">
+        <div class="pd-main mush_box">
+          <div class="mush_text">
+            <div class="d-flex gp-1">
+              <img src="./assets/images/hero_avater.png" alt="Ava" />
+              <p>Shroomie</p>
+            </div>
+          </div>
+          <!-- countdown  -->
+          <div class="d-flex-1">
+            <div>
+              <h2 class="pt-3x">Magic Mashrooms</h2>
+              <div class="pt-3x">
+                <button class="sign_btn_3 ">
+                  <i class="fa-regular fa-eye"></i>See NFT
+                </button>
+              </div>
+            </div>
+            <div>
+              <h4>Auction ends in:</h4>
+              <div class="mush_count-1 d-flex-1 gp-1 pt-1">
+                <div>
+                  <h2>59</h2>
+                  <span class="time">Hours</span>
+                </div>
+                <!-- two  -->
+                <div>
+                  <h2>:59</h2>
+                  <span class="time">Minutes</span>
+                </div>
+                <!-- three -->
+                <div>
+                  <h2>:59</h2>
+                  <span class="time">Seconds</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- how it works -->
+      <section class="pd-main">
+        <div class="trend-box">
+          <h1>How it works</h1>
+          <p>Find out how to get started</p>
+        </div>
+
+        <!-- works  -->
+        <div class="d-flex works gp-2">
+          <div class="works_box d-flex-col">
+            <div>
+              <img src="./assets/images/work_1.png" alt="" />
+            </div>
+            <div class="works_text">
+              <h3>Setup Your wallet</h3>
+              <p>
+                Set up your wallet of choice. Connect it to the Animarket by
+                clicking the wallet icon in the top right corner.
+              </p>
+            </div>
+          </div>
+
+          <!-- works 2 -->
+          <div class="works_box d-flex-col">
+            <div>
+              <img src="./assets/images/work_1.png" alt="" />
+            </div>
+            <div class="works_text">
+              <h3>Setup Your wallet</h3>
+              <p>
+                Set up your wallet of choice. Connect it to the Animarket by
+                clicking the wallet icon in the top right corner.
+              </p>
+            </div>
+          </div>
+          <!-- work 3  -->
+          <div class="works_box d-flex-col">
+            <div>
+              <img src="./assets/images/work_1.png" alt="" />
+            </div>
+            <div class="works_text">
+              <h3>Setup Your wallet</h3>
+              <p>
+                Set up your wallet of choice. Connect it to the Animarket by
+                clicking the wallet icon in the top right corner.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- subscribe -->
+      <section class="pd-main">
+        <div class="sub_box">
+          <div class="d-flex sub">
+            <div>
+              <img src="./assets/images/sub_img.png" alt="sub" />
+            </div>
+            <div class="sub_text">
+              <h3>Join our weekly digest</h3>
+              <p>Get exclusive promotions & updates straight to your inbox.</p>
+              <form action="#" class="sub_form">
+                <div class="sub_input">
+                  <input type="email" placeholder="Enter your email" required />
+                  <button type="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="pd-main">
+        <div class="d-flex fo gp-8">
+          <!-- logo  -->
+          <div class="footer_logo">
+            <div class="logo_box">
+              <div>
+                <img
+                  src="./assets/images/logo_icon.png"
+                  alt="NFT Marketplace Logo"
+                />
+              </div>
+              <div>
+                <h4>NFT Marketplace</h4>
+              </div>
+            </div>
+            <!-- logo-text  -->
+            <div class="footer_text-1">
+              <p class="footer_text">
+                NFT marketplace UI created with Anima for Figma.
+              </p>
+            </div>
+            <!-- logo -icon  -->
+            <div class="footer_join">
+              <h5>Join our community</h5>
+              <div class="icons">
+                <span><i class="fa-brands fa-discord"></i></span>
+                <span><i class="fa-brands fa-youtube"></i></span>
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </div>
+            </div>
+          </div>
+          <!-- Explore  -->
+          <div>
+            <div class="explore">
+              <div>
+                <h4>Explore</h4>
+              </div>
+              <div class="footer_text-1">
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Ranking</a></li>
+                <li><a href="#">connect a wallet</a></li>
+              </div>
+            </div>
+          </div>
+          <!-- join footer  -->
+          <div class="sub_text">
+            <h4>Join our weekly digest</h4>
+            <p class="foot_sub_text footer_text-1">
+              Get exclusive promotions & updates straight to your inbox.
+            </p>
+            <form action="#" class="foot_sub_form">
+              <div class="sub_input">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- line  -->
+        <div>
+          <hr />
+          <div class="d-flex-1 pt-1">
+            <div>Ⓒ NFT Market. Use this template freely.</div>
+            <div>Design by Blesinto</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

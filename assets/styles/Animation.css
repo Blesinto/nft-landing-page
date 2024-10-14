@@ -1,0 +1,79 @@
+html {
+  scroll-behavior: smooth; /* Optional: smooth scroll to anchors */
+}
+/* Define the slide-up animation */
+@keyframes slideUp {
+  0% {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly below */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Original position */
+  }
+}
+
+/* Styles for trend cards */
+.trend-box.visible,
+.top_box.visible,
+.dis_nft_box.visible,
+.cat_box.visible,
+.works_box.visible {
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Start slightly below */
+  animation: slideUp 0.5s ease-in forwards; /* Apply animation */
+  animation-delay: 0.5s; /* Small delay for the title box */
+}
+
+.trend_card.visible > div {
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Start slightly below */
+  animation: slideUp 0.5s ease-in forwards; /* Apply animation */
+}
+
+/* Add a delay for each card */
+.trend_card > div:nth-child(1),
+.dis_nft_box:nth-child(1),
+.works_box:nth-child(1) {
+  animation-delay: 0.2s; /* Delay for the first card */
+}
+
+.trend_card > div:nth-child(2),
+.dis_nft_box:nth-child(2),
+.works_box:nth-child(2) {
+  animation-delay: 0.4s; /* Delay for the second card */
+}
+
+.trend_card > div:nth-child(3),
+.dis_nft_box:nth-child(3),
+.works_box:nth-child(3) {
+  animation-delay: 0.6s; /* Delay for the third card */
+}
+
+/* Ensure visibility when animated */
+.trend_card > div.show {
+  opacity: 1; /* Fully visible */
+}
+
+/* Add a delay for each card */
+.top_box:nth-child(1),
+.cat_box:nth-child(1) {
+  animation-delay: 0.2s; /* Delay for the first card */
+}
+
+.top_box:nth-child(2),
+.cat_box:nth-child(2) {
+  animation-delay: 0.4s; /* Delay for the second card */
+}
+
+.top_box:nth-child(3),
+.cat_box:nth-child(3) {
+  animation-delay: 0.6s; /* Delay for the third card */
+}
+
+.top_box:nth-child(4),
+.cat_box:nth-child(4) {
+  animation-delay: 0.8s; /* Delay for the fourth card */
+}
+
+/* Ensure visibility when animated */
