@@ -1,26 +1,155 @@
 /* Responsive styles */
-@media screen and (max-width: 768px) {
-  .nav_link {
-    display: none; /* Hide the menu links by default */
+
+/* ... (keep existing styles up to the media queries) ... */
+
+/* Global Responsive Adjustments */
+@media screen and (max-width: 1200px) {
+  .pd-main {
+    padding: 60px 50px;
   }
 
-  /* Show the hamburger icon on smaller screens */
+  .hero_title {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .hero_para {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .trend_card,
+  .top,
+  .cat_container,
+  .nft_box,
+  .works {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .pd-main {
+    padding: 40px 30px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 30px;
+  }
+
+  .hero_text,
+  .hero_img_container {
+    width: 100%;
+    max-width: 510px;
+  }
+
+  .hero_title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .mush {
+    background-size: cover;
+  }
+
+  .mush_box {
+    padding: 200px 40px 40px;
+  }
+
+  .sub {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .sub_text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .fo {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pdh-main {
+    padding: 15px 20px;
+  }
+
+  .hero_title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .hero_para {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .trend-box h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .trend-box p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .top_box,
+  .cat_box,
+  .works_box {
+    width: 100%;
+    max-width: 300px;
+  }
+   .works_box{
+    flex-direction: row;
+  }
+
+  .mush_box {
+    padding: 150px 20px 20px;
+  }
+
+  .sub_input input,
+  .sub_input button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .sub_input button {
+    position: static;
+    transform: none;
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .nav_link {
+    display: none;
+  }
+
   .hamburger {
     display: block;
   }
 
-  /* When the user clicks on the hamburger menu */
   .nav_link.show {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 60px; /* Position below the header */
+    position: fixed;
+    top: 60px;
+    left: 0;
     right: 0;
     background: #3b3b3b;
     width: 100%;
-    height: 100vh;
-    justify-content: center;
+    height: calc(100vh - 60px);
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 20px;
+    z-index: 1000;
   }
 
   .nav_link ul {
@@ -36,27 +165,26 @@
     margin-top: 20px;
   }
 
-  .hero_img_container {
-    width: 315px;
+  .hero_img_container,
+  .hero_text {
+    width: 100%;
+    max-width: 315px;
     margin: auto;
   }
+
   .hero_text {
-    width: 315px;
-    padding: 60px 30px 40px 30px;
+    padding: 40px 0;
   }
+
   .hero_title {
     font-size: 28px;
-    font-weight: 600;
     line-height: 39.2px;
-    text-align: left;
-    width: 315px;
-    height: 66px;
   }
+
   .hero_para {
     font-size: 16px;
-    width: 315px;
-    height: 66px;
   }
+
   .hero,
   .trend_card,
   .top,
@@ -64,35 +192,148 @@
   .nft_box,
   .works,
   .fo,
-  .sub {
+  .sub,
+  .creators,.dis{
     flex-direction: column;
-    margin: auto;
+    align-items: flex-start;
   }
-  .cat_box{
-    margin: auto;
+
+  .cat_box {
+    margin: 10px auto;
+  }
+
+  .mush {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+
+  .pdh-main {
+    padding: 15px;
+  }
+
+  .sub_input button {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .sub_text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dis_btn {
+    padding-top: 20px;
+    position: static;
+  }
+
+  .get_btn,
+  .hero_count_box {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .trend-box {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .trend-box h1 {
+    font-size: 28px;
+    line-height: 39.2px;
+  }
+
+  .trend-box p {
+    width: 100%;
+    max-width: 315px;
+    margin: 10px auto;
+  }
+
+  .hero_count_box {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pdh-main {
+    padding: 10px;
+  }
+
+  .hero_title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .hero_para {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .trend-box h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .cat_box,
+  .top_box {
+    width: 100%;
+    max-width: 280px;
+    flex-direction: row;
+  }
+  .top_box {
+    padding: 10px;
+    height: 130px;
   }
   .pd-main {
-    padding: 0;
+    padding: 30px 15px;
   }
-  .mush {
-    width: 375px;
-    height: 590px;
+
+  .hero_title {
+    font-size: 28px;
+    line-height: 34px;
   }
-  .pdh-main {
-    padding: 15px 30px 15px 30px;
+
+  .hero_para {
+    font-size: 14px;
+    line-height: 22px;
   }
-  .sub_input button {
-    right: 50%;
+
+  .hero_count_box {
+    /* flex-direction: column; */
+    align-items: center;
   }
-  .sub_text {
+  .creators div, .top,.trend-box h1,.dis,.works {
     width: 315px;
+    margin: 10px auto;
   }
-  .dis{
-    flex-direction: column;
+
+  .trend_img img {
+    width: 80px;
+    height: 80px;
   }
-  .dis_btn{
-    padding-top: 20rem;
-    position: absolute;
-    /* bottom: 50px; */
+
+  .mush_box {
+    padding: 100px 15px 15px;
   }
+
+  .works_text {
+    padding: 9px 9px;
+  }
+
+  .sub_text h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .sub_text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .works_text p{
+    font-size: 10px;
+    text-align: left;
+  }
+  
 }

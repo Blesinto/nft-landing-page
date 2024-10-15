@@ -76,4 +76,42 @@ html {
   animation-delay: 0.8s; /* Delay for the fourth card */
 }
 
-/* Ensure visibility when animated */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the hero title */
+.hero_title.visible {
+  animation: slideInLeft 0.8s ease-in-out forwards;
+  opacity: 0;
+}
+
+.hero_para.visible,
+.get_btn.visible {
+  animation: slideInLeft 1.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(20%); /* Start off-screen to the right */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* End in the final position */
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the hero image container */
+.hero_img_container {
+  animation: slideInRight 1.5s ease-in-out forwards; /* Adjust duration if needed */
+  opacity: 0; /* Initial state for opacity */
+  overflow: auto;
+}

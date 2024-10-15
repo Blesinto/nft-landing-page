@@ -14,20 +14,15 @@ const handleIntersection = (entries, observer) => {
 // Options for the Intersection Observer
 const options = {
   root: null, // Use the viewport as the root
-  rootMargin: '0px', // No margin
+  rootMargin: '100px', // No margin
   threshold: 0.1, // Trigger when 10% of the element is visible
 };
 
 // Create an Intersection Observer instance
 const observer = new IntersectionObserver(handleIntersection, options);
 
-// Select all elements with the class 'top_box' to observe
-// const topBoxes = document.querySelectorAll('.top_box');
-// topBoxes.forEach(box => {
-//   observer.observe(box); // Start observing each box
-// });
 const elementsToObserve = document.querySelectorAll(
-  '.trend-box,.trend_card, .top_box, .dis_nft_box, .cat_box, .works_box'
+  '.trend-box,.trend_card, .top_box, .dis_nft_box, .cat_box, .works_box,.hero_title,.hero_para,.get_btn'
 );
 elementsToObserve.forEach(element => {
   observer.observe(element); // Start observing each element
